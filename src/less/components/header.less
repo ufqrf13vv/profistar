@@ -1,28 +1,79 @@
 .header {
-	display: flex;
-	justify-content: space-between;
 
-	padding-top: 14px;
-	padding-bottom: 10px;
+	&--menu {
+		background: rgba(199, 67, 67, 0.7);
+	}
 
-	color: #333333;
+	.header__block{
+		display: flex;
+		justify-content: space-between;
+
+		padding-top: 14px;
+		padding-bottom: 10px;
+
+		color: #333333;
+
+			@media @extrasmall {
+				flex-wrap: wrap;			
+			}
+	}
 
 	&__left {
 		display: flex;
+
+		@media @extrasmall {
+			margin: auto;
+		}
 	}
 
 	&__burger-button {
 		width: 40px;
 		height: 40px;
 
-		background: url('../img/ico/burger.png') no-repeat 8px 10px;
+		background: #ffffff;
 		border: 2px solid #cb0914;
-		border-radius: 2px;	
+		border-radius: 4px;	
 
 		margin-top: 5px;
 		margin-right: 20px;
 
 		cursor: pointer;
+
+		position: relative;
+
+		&:hover {
+			background: #cb0914;
+		}
+
+		&-top,
+		&-center,
+		&-bottom {
+			height: 3px;
+			width: 20px;
+
+			background: #343434;
+
+			position: absolute;
+			left: 8px;
+		}
+
+		&-top {
+			top: 11px;
+		}
+
+		&-center {
+			top: 17px; 
+		}
+
+		&-bottom {
+			top: 23px; 
+		}
+
+		&:hover &-top,
+		&:hover &-center,
+		&:hover &-bottom, {
+			background: #ffffff;
+		}
 	}
 
 	&__logo-big {
@@ -41,14 +92,23 @@
 		font-weight: 100;
 	}
 
+	&__logo--menu,
+	&__logo--menu .header__logo-big {
+		color: #ffffff;
+	}
+
 	&__record {
+
+		@media @extrasmall {
+			margin: auto;
+		}
 
 		&-link {
 			display: inline-block;
 			
 			font-family: 'MullerBold';
 			font-size: 16px;
-
+			
 			text-decoration: none;
 
 			padding: 10px 53px;
@@ -57,7 +117,21 @@
 			border-radius: 25px;
 			
 			color: #3d3d3d;
+
+			&:hover {
+				background: #1b91e3;
+				color: #ffffff;
+			}
+
+			@media @medium {
+				font-size: 16px;
+			}
+
+			@media @small {
+				font-size: 13px;
+			}
 		}
+
 	}
 
 	&__phones {
@@ -67,6 +141,12 @@
 		font-family: 'MullerLight';
 
 		position: relative;
+
+		@media @extrasmall {
+			margin: auto;
+
+			padding-right: 0;
+		}
 
 		&::before {
 			content: '';
@@ -80,6 +160,18 @@
 			position: absolute;
 			top: 0;
 			left: -40px;
+
+			@media @medium {
+				display: block;
+			}
+
+			@media @extrasmall {
+				display: none;
+			}
+
+			@media @small {
+				display: none;
+			}
 		}
 
 		&::after {
@@ -95,6 +187,18 @@
 			position: absolute;
 			top: 3px;
 			right: 0;
+
+			@media @medium {
+				display: block;
+			}
+
+			@media @extrasmall {
+				display: none;
+			}
+
+			@media @small {
+				display: none;
+			}
 		}
 
 		&-top {

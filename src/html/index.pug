@@ -10,21 +10,97 @@ html
 
 		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 	body
+		header.header.header--menu
+			.container
+				.header__block
+					.header__left
+						button.header__burger-button.header__burger-button--menu
+							span.header__burger-button-top
+							span.header__burger-button-center
+							span.header__burger-button-bottom
+						.header__logo.header__logo--menu 
+							.header__logo-big ПрофиСтар
+							.header__logo-small Ателье натяжных потолков
+					.header__record
+						a.header__record-link(href="#") Записаться на замер
+					.header__phones
+						.header__phones-top +7 (391) 
+							span 288-34-34
+						.header__phones-bottom Принимаем звонки до <b>22:00</b>
+
+	.nav
 		.container
-			header.header
-				.header__left
-					button.header__burger-button
-					.header__logo 
-						.header__logo-big ПрофиСтар
-						.header__logo-small Ателье натяжных потолков
-				.header__record
-					a.header__record-link(href="#") Записаться на замер
-				.header__phones
-					.header__phones-top +7 (391) 
-						span 288-34-34
-					.header__phones-bottom Принимаем звонки до <b>22:00</b>
+			.nav__block
+				.nav__block-left
+					ul.nav__main-list
+						li.nav__main-item 
+							a.nav__main-link(href="#") Пункт 1
+						li.nav__main-item 
+							a.nav__main-link(href="#") Пункт 2
+						li.nav__main-item 
+							a.nav__main-link(href="#") Пункт 3
+						li.nav__main-item 
+							a.nav__main-link(href="#") Пункт 4
+						li.nav__main-item 
+							a.nav__main-link(href="#") Пункт 5
+						li.nav__main-item 
+							a.nav__main-link(href="#") Пункт 6
+						li.nav__main-item 
+							a.nav__main-link(href="#") Пункт 7
+						li.nav__main-item 
+							a.nav__main-link(href="#") Пункт 8
+						li.nav__main-item 
+							a.nav__main-link(href="#") Пункт 9
+						li.nav__main-item 
+							a.nav__main-link(href="#") Пункт 10
+						li.nav__main-item 
+							a.nav__main-link(href="#") Пункт 11
 
+					ul.nav__main-list
+						li.nav__main-item 
+							a.nav__main-link(href="#") Пункт 1
+						li.nav__main-item 
+							a.nav__main-link(href="#") Пункт 2
+						li.nav__main-item 
+							a.nav__main-link(href="#") Пункт 3
 
+				.nav__block-right
+					ul.nav__main-list--small
+						li.nav__main-item 
+							a.nav__main-link(href="#") Пункт 1
+						li.nav__main-item 
+							a.nav__main-link(href="#") Пункт 2
+						li.nav__main-item 
+							a.nav__main-link(href="#") Пункт 3
+						li.nav__main-item 
+							a.nav__main-link(href="#") Пункт 4
+						li.nav__main-item 
+							a.nav__main-link(href="#") Пункт 5
+						li.nav__main-item 
+							a.nav__main-link(href="#") Пункт 6
 
+			.nav__block
+				ul.nav__main-list.nav__main-list--tel
+					li.nav__main-item
+						.nav__main-item-top +7 (391) 288-34-34
+						.nav__main-item-bottom Заказ и консультации
+					li.nav__main-item
+						.nav__main-item-top +7 (391) 258-33-15
+						.nav__main-item-bottom Дилерский отдел
+					li.nav__main-item
+						.nav__main-item-top +7 (391) 258-33-15
+						.nav__main-item-bottom Дилерский отдел
+				
+				a.nav__main-link.nav__main-link--vk(href="#")
+					img(src="img/ico/vk.png")
+					.nav__main-item-bottom Мы вконтакте
 
+			.nav__block.nav__block--contacts
+				.nav__adress г. Красноярск, ул. Абытаевская 26
+				.nav__mail 24potolok@mail.ru
+				a.nav__feedback Обратная связь
+
+			form.search
+				input.search__input(type="text" placeholder="Например: Натяжной потолок в ванную")
+				input.search__submit(type="submit")
 

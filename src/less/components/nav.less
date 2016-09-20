@@ -1,0 +1,173 @@
+.nav {
+	background: #c34142;
+
+	padding-top: 60px;
+	padding-bottom: 150px;
+
+	opacity: 0.7;
+
+	&__block {
+		display: flex;
+
+		margin-bottom: 90px;
+
+		&--contacts {
+			justify-content: space-between;
+
+			font-family: 'MullerLight';
+			font-size: 18px;
+			color: #ffffff;
+
+			margin-bottom: 110px;
+		}
+	}
+
+	&__main-list {
+		width: 960px;
+
+		margin: 0;
+		margin-bottom: 70px;
+		margin-right: 70px;
+
+		padding: 0;
+
+		list-style: none;
+
+		column-count: 3;
+	    column-width: 100px;
+	    column-gap: 10px;
+
+	    &--tel {
+	    	margin-bottom: 25px;
+	    }
+	}
+
+	&__main-list:last-child {
+		margin-bottom: 0;
+	}
+
+	&__main-item {
+		font-family: 'MullerBold';
+		font-size: 24px;
+		color: #ffffff;
+
+		margin-bottom: 25px;
+	}
+
+	&__main-item-bottom {
+		font-family: 'MullerLight';
+		font-size: 14px;
+
+		color: #e5acac;
+	}
+
+	&__main-link {
+		font-family: 'MullerLight';
+		font-size: 18px;
+
+		color: #ffffff;
+
+		text-decoration: none;
+
+		border-bottom: 1px solid #d57a7b;
+
+		padding-bottom: 2px;
+
+		&--vk {
+			border-bottom: none;
+		}
+	}
+
+	&__main-list--small {
+		margin: 0;
+		padding: 0;
+
+		list-style: none;
+	}
+
+	&__adress {
+		padding-left: 30px;
+
+		position: relative;
+
+		&::before {
+			content: '';
+			width: 20px;
+			height: 25px;
+
+			background: url("../img/ico/point.png") no-repeat 0 0;
+
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+
+	&__mail {
+		padding-left: 38px;
+
+		position: relative;
+
+			&::before {
+				content: '';
+				width: 30px;
+				height: 20px;
+
+				background: url("../img/ico/mail.png") no-repeat 0 0;
+
+				position: absolute;
+				top: 0;
+				left: 0;
+		}
+	}
+
+	&__feedback {
+		font-size: 14px;
+		color: #ffffff;
+
+		padding: 9px 35px;
+
+		border: 1px solid #ffffff;
+		border-radius: 3px;
+
+		&:hover {
+			background: #ffffff;
+			color: #c34142;
+		}
+	}
+}
+
+.search {
+	position: relative;
+
+	&__input {
+		width: 100%;
+		box-sizing: border-box;
+
+		border: 1px solid #e5acac;
+    	background: transparent;
+
+    	padding: 15px 10px 13px 10px;
+    	color: #e5acac;
+
+    	&:focus {
+    		outline: none;
+    	}
+	}
+
+	&__submit {
+		width: 30px;
+		height: 30px;
+
+		background: url('../img/ico/search.png') no-repeat 0 0, transparent;
+		border: none;
+
+		color: transparent;
+
+		position: absolute;
+	    right: 5px;
+    	top: 10px;
+
+    	cursor: pointer;
+	}
+}

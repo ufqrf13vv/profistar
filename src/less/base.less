@@ -4,9 +4,24 @@ body {
 }
 
 .container {
-	width: 1200px;
 	margin: 0 auto;
 	padding: 0 15px;
+
+	@media @extrasmall {
+		width: @xs;
+	}
+
+	@media @small {
+		width: @sm;
+	}
+
+	@media @medium {
+		width: @md;
+	}
+
+	@media @large {
+		width: @lg;
+	}
 }
 
 a {
