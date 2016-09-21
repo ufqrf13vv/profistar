@@ -6,6 +6,8 @@
 
 	opacity: 0.7;
 
+	display: none;
+
 	&__block {
 		display: flex;
 
@@ -19,26 +21,69 @@
 			color: #ffffff;
 
 			margin-bottom: 110px;
+
+			@media @large {
+				flex-wrap: nowrap;
+			}
+
+			@media @extrasmall {
+				flex-wrap: wrap;
+			}
 		}
 	}
 
 	&__main-list {
-		width: 960px;
-
 		margin: 0;
 		margin-bottom: 70px;
-		margin-right: 70px;
-
+		
 		padding: 0;
 
 		list-style: none;
 
-		column-count: 3;
 	    column-width: 100px;
 	    column-gap: 10px;
 
+	    @media @large {
+	    	width: 960px;
+	    	margin-right: 70px;
+
+	    	column-count: 3;
+	    }
+
+	    @media @medium {
+	    	width: 840px;
+	    	height: 190px;
+
+	    	margin-right: 20px;
+
+	    	column-count: 3;
+	    }
+
+	    @media @small {
+	    	width: 640px;
+	    	margin-right: 20px;
+
+	    	column-count: 2;
+	    }
+
+	    @media @extrasmall {
+	    	column-count: 1;
+	    }
+
 	    &--tel {
 	    	margin-bottom: 25px;
+
+	    	@media @large {
+	    		margin-right: 0;
+	    	}
+
+	    	@media @small {
+	    		column-count: 3;
+	    	}
+
+	    	@media @extrasmall {
+	    		margin-right: 50px;
+	    	}
 	    }
 	}
 
@@ -47,18 +92,32 @@
 	}
 
 	&__main-item {
-		font-family: 'MullerBold';
-		font-size: 24px;
 		color: #ffffff;
 
 		margin-bottom: 25px;
-	}
 
-	&__main-item-bottom {
-		font-family: 'MullerLight';
-		font-size: 14px;
+		&-top {
+			font-family: 'MullerBold';
 
-		color: #e5acac;
+			@media @large {
+				font-size: 24px;		
+			}
+
+			@media @medium {
+				font-size: 24px;
+			}
+			
+			@media @small {
+				font-size: 20px;
+			}
+		}
+
+		&-bottom {
+			font-family: 'MullerLight';
+			font-size: 14px;
+
+			color: #e5acac;
+		}
 	}
 
 	&__main-link {
@@ -71,7 +130,13 @@
 
 		border-bottom: 1px solid #d57a7b;
 
-		padding-bottom: 2px;
+		@media @large {
+			padding-bottom: 2px;
+		}
+
+		@media @medium {
+			padding-bottom: 0;
+		}
 
 		&--vk {
 			border-bottom: none;
@@ -88,7 +153,15 @@
 	&__adress {
 		padding-left: 30px;
 
-		position: relative;
+		position: relative; 
+
+		@media @large {
+			margin-bottom: 0;
+		}
+
+		@media @extrasmall {
+			margin-bottom: 20px;
+		}
 
 		&::before {
 			content: '';
@@ -107,6 +180,14 @@
 		padding-left: 38px;
 
 		position: relative;
+
+		@media @large {
+			margin-bottom: 0;
+		}
+
+		@media @extrasmall {
+			margin-bottom: 20px;
+		}
 
 			&::before {
 				content: '';
@@ -130,6 +211,16 @@
 		border: 1px solid #ffffff;
 		border-radius: 3px;
 
+		@media @large {
+			width: auto;
+		}
+
+		@media @extrasmall {
+			width: 100%;
+
+			text-align: center;
+		}
+
 		&:hover {
 			background: #ffffff;
 			color: #c34142;
@@ -143,6 +234,8 @@
 	&__input {
 		width: 100%;
 		box-sizing: border-box;
+
+		font-size: 14px;
 
 		border: 1px solid #e5acac;
     	background: transparent;

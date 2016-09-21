@@ -74,6 +74,27 @@
 		&:hover &-bottom, {
 			background: #ffffff;
 		}
+
+		&--menu {
+			background: transparent;
+			border: 2px solid rgba(198, 62, 62, 0.2);
+		}
+
+		&--menu .header__burger-button-top {
+			transform: rotate(45deg);
+			top: 17px;
+			background: #ffffff;
+		}
+
+		&--menu .header__burger-button-center {
+			display: none;
+		}
+
+		&--menu .header__burger-button-bottom {
+			transform: rotate(-45deg);
+			top: 17px;
+			background: #ffffff;
+		}
 	}
 
 	&__logo-big {
@@ -129,6 +150,16 @@
 
 			@media @small {
 				font-size: 13px;
+			}
+
+			&--menu {
+				color: #ffffff;
+				border-color: rgba(230, 87, 87, 0.2);
+
+				&:hover {
+					border-color: #ffffff;
+					background: transparent;
+				}
 			}
 		}
 
@@ -213,6 +244,23 @@
 			font-size: 13px;
 
 			color: #8c8c8c;
+		}
+
+		&--menu {
+			color: #ffffff;
+
+			&::before,
+			&::after {
+				border-color: #ffffff;
+			}
+
+			&::before {
+				background: url('../img/ico/phone-menu.png') no-repeat 5px 5px;
+			}
+		}
+
+		&--menu > .header__phones-bottom {
+			color: #ffffff;
 		}
 	}
 }
