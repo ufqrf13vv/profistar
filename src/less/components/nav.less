@@ -1,5 +1,5 @@
 .nav {
-	background: #c34142;
+	background: @nav-color;
 
 	padding-top: 60px;
 	padding-bottom: 150px;
@@ -18,7 +18,7 @@
 
 			font-family: 'MullerLight';
 			font-size: 18px;
-			color: #ffffff;
+			color: @white;
 
 			margin-bottom: 110px;
 
@@ -92,7 +92,7 @@
 	}
 
 	&__main-item {
-		color: #ffffff;
+		color: @white;
 
 		margin-bottom: 25px;
 
@@ -124,7 +124,7 @@
 		font-family: 'MullerLight';
 		font-size: 18px;
 
-		color: #ffffff;
+		color: @white;
 
 		text-decoration: none;
 
@@ -204,11 +204,11 @@
 
 	&__feedback {
 		font-size: 14px;
-		color: #ffffff;
+		color: @white;
 
 		padding: 9px 35px;
 
-		border: 1px solid #ffffff;
+		border: 1px solid @white;
 		border-radius: 3px;
 
 		@media @large {
@@ -222,8 +222,8 @@
 		}
 
 		&:hover {
-			background: #ffffff;
-			color: #c34142;
+			background: @white;
+			color: @nav-color;
 		}
 	}
 }

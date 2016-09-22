@@ -104,10 +104,55 @@ html
 				input.search__input(type="text" placeholder="Например: Натяжной потолок в ванную")
 				input.search__submit(type="submit")
 
+
 	.main-slider
-		.main-slider__block
-			.main-slider__header Бесплатный <br>
-				span выезд специалиста на замер прямо сейчас!
+		.container
+			.main-slider__block
+				.main-slider__header Бесплатный
+				.main-slider__subheader выезд специалиста на замер <br> прямо сейчас!
+				ul.main-slider__list
+					li.main-slider__item
+						.main-slider__img
+							img(src="img/ico/question.png")
+						.main-slider__text Консультация по установке натяжного потолка
+					li.main-slider__item
+						.main-slider__img
+							img(src="img/ico/pen.png")
+						.main-slider__text Проведение замеров помещения
+					li.main-slider__item
+						.main-slider__img
+							img(src="img/ico/facture.png")
+						.main-slider__text Помощь в подборе фактуры и цвета полотна
+				a.main-slider__measurement(href="#") Записаться на замер
+
 		.main-slider__wrapper
 			.main-slider__slide
-				img(src="img/ico/pic1.png")
+			ul.slick-dots
+				li.slick-dot.active
+				li.slick-dot
+				li.slick-dot
+				li.slick-dot
+
+	form.calculate
+		.container
+			.calculate__header
+				.calculate__text Расчёт стоимости натяжного потолка с установкой
+			.calculate__wrapper
+				.calculate__block
+					.calculate__row
+						lebel.calculate__label(for="area") Площадь вашего потолка:
+						input.calculate__input(type="text",id="area")
+					.calculate__container
+						.calculate__slider
+							.calculate__range
+							span.calculate__dot
+							span.calculate__sign-left 0
+							span.calculate__sign-right 100
+
+				.calculate__block
+					.calculate__row.calculate__row--big
+						.calculate__label Примерная стоимость:
+					.calculate__price от 5994 <span>c</span> до 7560 <span>c</span>
+
+				.calculate__block
+					input.calculate__submit(type="submit", value="Заказать потолок")

@@ -2,21 +2,290 @@
 	position: relative;
 
 	&__block {
+		width: 700px;
+		font-size: 72px;
+
 		position: absolute;
+
+		@media @large {
+			top: 80px;	
+		}
+
+		@media @medium {
+			top: 60px;
+		}
+
+		@media @small {
+			top: 40px;
+		}
+
+		@media @extrasmall {
+			top: 10px;
+		}
 	}
 
 	&__header {
 		font-family: 'MullerBold';
-		font-size: 72px;
 		font-weight: bold;
 		text-transform: uppercase;
 
 		color: #cbfc0c;
 
-		& > span {
-			font-size: 36px;
+		@media @large {
+			font-size: 1em;	
+		}
 
-			color: #ffffff;
+		@media @medium {
+			font-size: 0.7em;
+		}
+
+		@media @small {
+			font-size: 0.5em;
+		}
+
+		@media @extrasmall {
+			font-size: 0.4em;
 		}
 	}
+
+	&__subheader {
+		font-family: 'MullerBold';
+		text-transform: uppercase;
+
+		color: @white;
+
+		@media @large {
+			font-size: 36px;
+
+			margin-bottom: 50px;
+		}
+
+		@media @medium {
+			font-size: 30px;
+
+			margin-bottom: 40px;
+		}
+
+		@media @small {
+			font-size: 26px;
+			margin-bottom: 30px;
+		}
+
+		@media @extrasmall {
+			font-size: 18px;
+
+			margin-bottom: 10px;
+		}
+	}
+
+	&__image {
+		width: 100%;
+	}
+
+	&__list {
+		padding: 0;
+		margin: 0;
+
+		list-style: none;
+
+		@media @large {
+			margin-bottom: 0;
+		}
+
+		@media @medium {
+			margin-bottom: -20px;
+		}
+
+		@media @small {
+			margin-bottom: -20px;
+		}
+
+		@media @extrasmall {
+			margin-bottom: -20px;
+		}
+	}
+
+	&__item {
+		display: flex;
+
+		@media @large {
+			margin-bottom: 20px;
+		}
+
+		@media @medium {
+			margin-bottom: 15px;
+		}
+
+		@media @small {
+			margin-bottom: 10px;
+		}
+
+		@media @extrasmall {
+			margin-bottom: 5px;
+		}
+	}
+
+	&__img {
+		display: flex;
+		justify-content: center;
+
+		box-sizing: border-box;
+
+		border: 2px solid @white;
+    	border-radius: 50%;
+
+		@media @medium {
+			height: 50px;
+			width: 50px;
+		}
+
+		@media @small {
+			height: 40px;
+			width: 40px;
+		}   	
+
+    	@media @extrasmall {
+    		display: none;
+    	}
+	}
+
+	&__img img {
+		align-self: center;
+	}
+
+	&__text {
+		color: @white;
+
+		font-family: 'MullerBold';
+
+		@media @large {
+			font-size: 20px;
+
+			padding-top: 15px;
+			padding-left: 20px;	
+		}
+
+		@media @medium {
+			font-size: 18px;
+
+			padding-top: 15px;
+			padding-left: 20px;	
+		}
+
+		@media @small {
+			font-size: 15px;
+
+			padding-top: 15px;
+			padding-left: 20px;
+		}
+
+		@media @extrasmall {
+			font-size: 12px;
+		}
+	}
+
+	&__measurement {
+		display: inline-block;
+
+		font-family: 'MullerBold';
+		font-size: 18px;
+		text-decoration: none;
+
+		background: @green;
+		border-radius: 25px;
+
+		padding: 15px 50px;
+
+		@media @small {
+			font-size: 18px;
+		}
+
+		@media @extrasmall {
+			font-size: 15px;
+		}
+	}
+
+	&__slide {
+		background: url('../img/ico/pic1.png') no-repeat 50% 50%;
+		background-size: cover;
+
+		@media @large {
+			height: 730px;
+		}
+
+		@media @medium {
+			height: 550px;
+		}
+
+		@media @small {
+			height: 450px;
+		}
+
+		@media @extrasmall {
+			height: 250px;
+		}
+	}
+}
+
+.slick-dots {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+
+	position: absolute;
+
+	@media @large {
+		bottom: 60px;
+		left: 20px;	
+	}
+
+	@media @medium {
+		bottom: 20px;
+		left: 8%;
+	}
+
+	@media @small {
+		left: 5%;
+		bottom: 5%;
+	}
+
+	@media @extrasmall {
+		left: 30%;
+		bottom: 5%;
+	}
+	
+}
+
+.slick-dot {
+	display: inline-block;
+
+	background: @white;
+	border-radius: 50%;
+
+	margin-right: 5px;
+
+	@media @large {
+		width: 20px;
+		height: 20px;	
+	}
+
+	@media @medium {
+		width: 18px;
+		height: 18px;
+	}
+
+	@media @small {
+		width: 15px;
+		height: 15px;
+	}
+
+	@media @extrasmall {
+		width: 12px;
+		height: 12px;
+	}
+}
+
+.slick-dot.active {
+	background: @red;
 }

@@ -31,7 +31,7 @@
 		height: 40px;
 
 		background: #ffffff;
-		border: 2px solid #cb0914;
+		border: 2px solid @red;
 		border-radius: 4px;	
 
 		margin-top: 5px;
@@ -42,7 +42,7 @@
 		position: relative;
 
 		&:hover {
-			background: #cb0914;
+			background: @red;
 		}
 
 		&-top,
@@ -72,7 +72,7 @@
 		&:hover &-top,
 		&:hover &-center,
 		&:hover &-bottom, {
-			background: #ffffff;
+			background: @white;
 		}
 
 		&--menu {
@@ -83,7 +83,7 @@
 		&--menu .header__burger-button-top {
 			transform: rotate(45deg);
 			top: 17px;
-			background: #ffffff;
+			background: @white;
 		}
 
 		&--menu .header__burger-button-center {
@@ -93,7 +93,7 @@
 		&--menu .header__burger-button-bottom {
 			transform: rotate(-45deg);
 			top: 17px;
-			background: #ffffff;
+			background: @white;
 		}
 	}
 
@@ -102,7 +102,7 @@
 		font-size: 30px;
 		font-weight: bold;
 
-		color: #cb0914;
+		color: @red;
 
 		margin-bottom: 5px;
 	}
@@ -115,7 +115,7 @@
 
 	&__logo--menu,
 	&__logo--menu .header__logo-big {
-		color: #ffffff;
+		color: @white;
 	}
 
 	&__record {
