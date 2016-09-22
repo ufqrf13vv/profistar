@@ -6,16 +6,32 @@
 	&__wrapper {
 		display: flex;
 
+		height: 100px;
+
 		margin-left: 330px;
 	}
 
 	&__block {
-		margin-right: 40px;
+
+		@media @large {
+			margin-right: 40px;
+		}
+
+		@media @medium {
+			margin-right: 20px;
+		}
 	}
 
 	&__header {
 		position: absolute;
-		top: -20px;
+
+		@media @large {
+			top: -20px;
+		}
+
+		@media @medium {
+			top: -5px;
+		}
 	}
 
 	&__text {
@@ -23,14 +39,26 @@
 		box-sizing: border-box;
 
 		font-family: 'MullerBold';
-		font-size: 20px;
 
 		color: #ffffff;
 		background: #cb0914;
 
-		padding: 35px 10px 35px 35px;
-
 		position: relative;
+
+		@media @large {
+			font-size: 20px;
+			padding: 35px 10px 35px 35px;
+		}
+
+		@media @medium {
+			font-size: 17px;
+			padding: 25px 10px 25px 35px;
+		}
+
+		@media @small {
+			font-size: 15px;
+			padding: 25px 10px 25px 35px;
+		}
 
 		&::after {
 			content: '';
@@ -38,20 +66,37 @@
 			width: 0; 
 		    height: 0;
 
-		    border-top: 70px solid transparent;
-		    border-bottom: 70px solid transparent;
-		    border-left: 70px solid #cb0914;
-
 		    position: absolute;
 		    top: 0;
-		    right: -70px;
+
+    		@media @large {
+			    border-top: 70px solid transparent;
+			    border-bottom: 70px solid transparent;
+			    border-left: 70px solid #cb0914;
+
+			    right: -70px;
+			}
+
+			@media @medium {
+				border-top: 55px solid transparent;
+			    border-bottom: 55px solid transparent;
+			    border-left: 55px solid #cb0914;
+
+			    right: -55px;
+			}
 		}
 	}
 
 	&__row {
 		padding-top: 10px;
 
-		margin-bottom: 20px;
+		@media @large {
+			margin-bottom: 20px;
+		}
+
+		@media @medium {
+			margin-bottom: 20px;
+		}
 
 		&--big {
 			padding-top: 20px;
@@ -62,20 +107,38 @@
 
 	&__label {
 		font-family: 'MullerLight';
-		font-size: 16px;
 
-		margin-right: 32px;
+		@media @large {
+			font-size: 16px;
+			margin-right: 32px;
+		}
+
+		@media @medium {
+			font-size: 14px;
+			margin-right: 0;
+		}
 	}
 
 	&__input {
-		height: 36px;
-		width: 70px;
 		box-sizing: border-box;
 
 		border: 1px solid #c4d8e7;
 		border-radius: 3px;
 
-		padding-left: 17px;
+		@media @large {
+			height: 36px;
+			width: 70px;
+
+			padding-left: 17px;
+		}
+
+		@media @medium {
+			padding-left: 0;
+			text-align: center;
+
+			height: 26px;
+			width: 43px;
+		}
 	}
 
 	&__slider {
@@ -130,7 +193,7 @@
 
     	border-left: 3px solid #cb0914;
 
-		padding-top: 12px;
+		padding-top: 8px;
     	padding-left: 13px;
 
     	& > span {
@@ -140,9 +203,28 @@
 
 	&__submit {
 		display: inline-block;
+		align-self: center;
 
-		padding: 13px 50px;
+		font-family: 'MullerBold';
+
 		background: #cb0914;
+
+		border: none;
+		border-radius: 25px;
+
+		color: @white;
+
+		@media @large {
+			font-size: 20px;
+
+			padding: 10px 50px;
+		}
+
+		@media @medium {
+			font-size: 17px;
+
+			padding: 10px 30px;
+		}
 	}
 
 }
