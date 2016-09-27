@@ -1,0 +1,75 @@
+.catalog {
+	margin-bottom: 20px;
+
+	&__header {
+		font-family: 'MullerBold';
+		font-size: 30px;
+	}
+
+	&__text {
+		font-family: 'MullerLight';
+		margin-bottom: 43px;
+	}
+
+	&__wrapper {
+	    display: flex;
+	    flex-wrap: wrap;
+	    justify-content: space-between;
+	}
+
+	&__image {
+		display: flex;
+    	justify-content: center;
+    	align-items: center;
+
+    	height: 250px;
+	}
+
+	&__item {
+		width: 270px;
+		height: 370px;
+		box-sizing: border-box;
+
+		padding: 0 20px;
+
+		border: 3px solid @blue;
+
+		margin-bottom: 30px;
+
+		&:hover {
+			border-color: #2590da;
+		}
+
+		&:hover .catalog__item-price {
+			background: #379de3;
+			color: @white;
+		}
+
+		&-header {
+			height: 50px;
+
+			font-family: 'MullerBold';
+			font-size: 18px;
+
+		    margin-bottom: 3px;
+		}
+
+		&-price {
+			font-family: 'MullerBold';
+			font-size: 20px;
+
+			width: 100px;
+			box-sizing: border-box;
+
+			border: 3px solid #2590da;	
+			border-radius: 25px;
+
+			text-align: center;
+			padding: 4px 0;
+
+			& > span {
+				font-family: 'ALSRubl';
+			}
+		}
+	}
+}
