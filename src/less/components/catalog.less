@@ -8,13 +8,27 @@
 
 	&__text {
 		font-family: 'MullerLight';
-		margin-bottom: 43px;
+
+		margin-bottom: 30px;
+
+		@media @large {
+			margin-bottom: 0;
+		}
 	}
 
 	&__wrapper {
 	    display: flex;
 	    flex-wrap: wrap;
 	    justify-content: space-between;
+
+	    &--top {
+	    	justify-content: center;
+	    	margin-bottom: 43px;
+
+		    @media @large {
+		    	justify-content: space-between;
+		    }
+	    }
 	}
 
 	&__image {
@@ -71,5 +85,17 @@
 				font-family: 'ALSRubl';
 			}
 		}
+	}
+
+	&__link {
+		font-family: 'MullerBold';
+		font-size: 18px;
+		color: @white;
+		text-decoration: none;
+
+		padding: 14px 30px 12px 30px;
+
+		background: @red;
+		border-radius: 25px;
 	}
 }
