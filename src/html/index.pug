@@ -98,7 +98,7 @@ html
 			.nav__block.nav__block--contacts
 				.nav__adress г. Красноярск, ул. Абытаевская 26
 				.nav__mail 24potolok@mail.ru
-				a.nav__feedback Обратная связь
+				a.nav__feedback(href="#") Обратная связь
 
 			form.search
 				input.search__input(type="text" placeholder="Например: Натяжной потолок в ванную")
@@ -231,7 +231,7 @@ html
 		.container
 			.share__header Цены пополам
 			.share__text Второй потолок в подарок при покупке до конца месяца!
-			a.share__more Узнать подробнее
+			a.share__more(href="#") Узнать подробнее
 
 	.container
 		.features
@@ -467,7 +467,104 @@ html
 		.ceiling__header
 			.container
 				.ceiling__title Глянцевые потолки
-				.ceiling__subheader Многим людям хотелось бы не просто освежить свой интерьер ремонтом, но и придать ему более современный вид. Если это желание сочетается еще и с необходимостью зрительно увеличить небольшую комнату, то глянцевые натяжные потолки могут стать примером отличного выбора.
+				.ceiling__subtitle Многим людям хотелось бы не просто освежить свой интерьер ремонтом, но и придать ему более современный вид. Если это желание сочетается еще и с необходимостью зрительно увеличить небольшую комнату, то глянцевые натяжные потолки могут стать примером отличного выбора.
+		.container
+			.ceiling__wrapper
+				.ceiling__item
+					img(src="img/ceiling-1.png")
+				.ceiling__item
+					img(src="img/ceiling-1.png")
+				.ceiling__item
+					img(src="img/ceiling-1.png")
+				.ceiling__item
+					img(src="img/ceiling-1.png")
+
+	.container
+		.content
+			p Глянцевая отделка потолков - это использование в качестве натяжного потолка декоративных материалов, обладающих способностью зеркального отражения и рассеивания света. В силу своих свойств, глянцевые потолки очень распространены в оформлении интерьера офисных помещений, клубов и прочих заведений. Не менее часто они применяются и при ремонте обычных квартир.
+			h3 Особенности глянцевых потолков
+			b Натяжные потолки с эффектом отражения обладают целым рядом плюсов, среди которых можно перечислить основные:
+			ul
+				li потолки данного типа получаются очень гибкими и легкими. Это обстоятельство существенно упрощает монтаж потолков и позволяет создавать из них многоуровневые конструкции, нередко довольно сложные;
+				li потолки данного типа получаются очень гибкими и легкими. Это обстоятельство существенно упрощает монтаж потолков и позволяет создавать из них многоуровневые конструкции, нередко довольно сложные;
+				li потолки данного типа получаются очень гибкими и легкими. Это обстоятельство существенно упрощает монтаж потолков и позволяет создавать из них многоуровневые конструкции, нередко довольно сложные;
+				li потолки данного типа получаются очень гибкими и легкими. Это обстоятельство существенно упрощает монтаж потолков и позволяет создавать из них многоуровневые конструкции, нередко довольно сложные;
+
+			h3 Преимущества заказа потолков в "ПрофиСтар"
+			p.
+				Для того, чтобы установка натяжных потолков прошла быстро и в дальнейшем радовала вас безупречным качеством, выбирайте ателье натяжных потолков ПрофиСтар. Собственное производство глянцевых потолков позволяет устанавливать на них разумные цены.
+				Гарантия сроком до 50лет служит залогом того, что качество потолков будет на высоте, а большой выбор расцветок позволяет подобрать потолки для любого интерьера.
+				<br> <b> Замер и монтаж всего за один день - это реальность с ПрофиСтар!
+
+		h2 Фото
+		.gallery
+			.gallery__wrapper
+				.gallery__item
+					a.gallery__link(href="#")
+						.gallery__title Глянцевые
+						img(src="img/gallery.png")
+				.gallery__item
+					a.gallery__link(href="#")
+						.gallery__title Глянцевые
+						img(src="img/gallery.png")
+				.gallery__item
+					a.gallery__link(href="#")
+						.gallery__title Глянцевые
+						img(src="img/gallery.png")
+				.gallery__item
+					a.gallery__link(href="#")
+						.gallery__title Глянцевые
+						img(src="img/gallery.png")
+				.gallery__item
+					a.gallery__link(href="#")
+						.gallery__title Глянцевые
+						img(src="img/gallery.png")
+				.gallery__item
+					a.gallery__link(href="#")
+						.gallery__title Глянцевые
+						img(src="img/gallery.png")
+				.gallery__item
+					a.gallery__link(href="#")
+						.gallery__title Глянцевые
+						img(src="img/gallery.png")
+				.gallery__item
+					a.gallery__link(href="#")
+						.gallery__title Глянцевые
+						img(src="img/gallery.png")
+
+	.gallery__photos
+		.container
+			.gallery__wrapper.gallery__wrapper--photos
+				.gallery__main-block
+					.gallery__arrow-left
+					img(src="img/gallery/g1.jpg")
+					.gallery__arrow-right
+				.gallery__thumbnails
+					img(src="img/gallery/g1_small.jpg", width="270", height="127")
+					img(src="img/gallery/g2_small.jpg", width="270", height="127")
+					img(src="img/gallery/g3_small.jpg", width="270", height="127")
+					img(src="img/gallery/g4_small.jpg", width="270", height="127")
+
+	.container
+		h2 Бесплатный вызов специалиста
+		form.back-call
+			.back-call__header 
+				.back-call__p Хотите получить консультацию по материалам, акциям и замерам?
+				.back-call__p Просто введите Ваши данные <br>и мы свяжемся с Вами в течении пяти минут!
+			.back-call__row
+				.back-call__item
+					input.back-call__input(placeholder="Ваше имя")
+				.back-call__item
+					input.back-call__input(placeholder="Ваш телефон")
+				.back-call__item
+					input.back-call__input(placeholder="Удобное имя")
+				.back-call__item
+					input.back-call__submit(type="submit", value="Заказать звонок")
+			.back-call__footer
+				span Так же вы можете позвонить нам по номеру:
+				.back-call__frow
+					.back-call__fphone +7 (391) 288-34-34
+					.back-call__fblock Время звонка: с 9:00 до 22:00 без выходных
 
 	.footer
 		.container
@@ -540,8 +637,37 @@ html
 			.nav__block.nav__block--contacts.nav__block--fcontacts
 				.nav__adress г. Красноярск, ул. Абытаевская 26
 				.nav__mail 24potolok@mail.ru
-				a.nav__feedback Обратная связь
+				a.nav__feedback(href="#") Обратная связь
 			.footer__block
 				.footer__title Натяжные потолки © ПрофиСтар, 2010 - 2016. Официальный сайт. Копирование материалов сайта запрещено
 				.footer__developer Создание и продвижение сайта 
 					a.footer__link(href="#") itb-company
+
+	form.form(id="form-question")
+		.form__types
+			a.form__link(href="#") Перезвоните мне
+			a.form__link.active(href="#") Задать вопрос
+		.form__block
+			label.form__label(for="question") Вопрос
+			textarea.form__text(id="question", placeholder="Что Вас интересует")
+		.form__block
+			label.form__label(for="name") Имя
+			input.form__input(type="text", id="name", placeholder="Как к Вам обращаться")
+		.form__block
+			label.form__label(for="email") Электронная почта
+			input.form__input(type="text", id="email", placeholder="Ваш e-mail")
+		.form__block
+			input.form__submit(type="submit", value="Отправить заявку")
+
+	form.form(id="form-call")
+		.form__types
+			a.form__link.active(href="#") Перезвоните мне
+			a.form__link(href="#") Задать вопрос
+		.form__block
+			label.form__label(for="phone") Телефон
+			input.form__input(type="text", id="phone", placeholder="Контактный телефон")
+		.form__block
+			label.form__label(for="name-call") Имя
+			input.form__input(type="text", id="name-call", placeholder="Как к Вам обращаться")
+		.form__block
+			input.form__submit(type="submit", value="Отправить заявку")

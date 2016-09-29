@@ -4,14 +4,57 @@
 		background: url("../img/bg-ceiling.png");
 		color: @white;
 		text-align: center;
+
+		padding: 37px 0;
+		margin-bottom: 20px;
 	}
 
 	&__title {
 		font-family: 'MullerBold';
-		font-size: 36px;		
+		font-size: 36px;
+		line-height: 36px;
+
+		margin-bottom: 13px;
 	}
 
-	&__text {
+	&__subtitle {
+		padding-left: 137px;
+		padding-right: 137px;
 
+		@media @small {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+
+		@media @extrasmall {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	&__item {
+		margin-bottom: 25px;
+
+		@media @large {
+			width: 49%;
+		}
+		
+		@media @medium {
+			width: 45%;
+		}
+
+		@media @small {
+			width: 45%;
+		}
+
+		& > img {
+			width: 100%;
+		}
 	}
 }
